@@ -9,3 +9,4 @@
   <label name="body">自己紹介</label><br>
   <textarea type="text" name="body"></textarea>
 </form>
+
