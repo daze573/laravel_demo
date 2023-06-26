@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HogeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,5 @@ Route::get('/test', function () {
 Route::get('/index', function () {
     return view('index');
 });
+
+Route::get('/index', [HogeController::class, 'index']);
