@@ -11,10 +11,10 @@
     <div class="container">
       <h2 class="mt-5">システムへのご意見をお聞かせください</h2>
       <div class="form-group mt-5">
-        <form method="post" action="confirm.php">
+        <form method="post" action="send.blade.php">
           <div class="d-flex">
             <label name="name" class="w-50">氏名<span class="text-danger">※</span></label>
-            <input type="text" name="name" class="form-control"/>
+            <input type="text" name="title" class="form-control"/>
           </div>
           <div class="mt-3">
             <label name="gender" style="width: 35%;">性別<span class="text-danger">※</span></label>

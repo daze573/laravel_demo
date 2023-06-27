@@ -27,3 +27,6 @@ Route::get('/index', function () {
 });
 
 Route::get('/index', [HogeController::class, 'index']);
+Route::post('/send', [HogeController::class, 'send']);
+
+Route::get('/confirm', [HogeController::class, 'confirm']);

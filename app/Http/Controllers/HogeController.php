@@ -12,9 +12,15 @@ class HogeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Hoge $hoge)
+    public function index()
     {
-     return view('hoges/index')->with(['hoges' => $hoge->getOrderBy()]);
+     return view('hoges/index');
+    }
+    
+    public function send(Request $request)
+    {
+        $output = $request->title;
+        return view('result', compact('output'));
     }
 
     /**
@@ -81,5 +87,10 @@ class HogeController extends Controller
     public function destroy($id)
     {
         //
+    }
+    
+    public function confirm(Hoge $hoge)
+    {
+        return view('hoges/confirm')->with(['hoges' => $hoge->getOrderBy()]);
     }
 }
