@@ -11,7 +11,8 @@
     <div class="container">
       <h2 class="mt-5">システムへのご意見をお聞かせください</h2>
       <div class="form-group mt-5">
-        <form method="post" action="send.blade.php">
+        <form method="post" action="/send">
+          {{ csrf_field() }}
           <div class="d-flex">
             <label name="name" class="w-50">氏名<span class="text-danger">※</span></label>
             <input type="text" name="title" class="form-control"/>
@@ -45,7 +46,7 @@
           </div>
           <div class="opinion-form d-flex mt-3">
             <label name="opinion" class="w-50">ご意見　</label>
-            <textarea type="text" class="form-control" rows="10"></textarea>
+            <textarea type="text" class="form-control" rows="10" name="body"></textarea>
           </div>
           <div class="col-2 mx-auto mt-5">
             <input type="submit" value="確認" class="btn-lg"/>

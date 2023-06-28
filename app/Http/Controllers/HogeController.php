@@ -19,8 +19,11 @@ class HogeController extends Controller
     
     public function send(Request $request)
     {
-        $output = $request->title;
-        return view('result', compact('output'));
+        $output1 = $request->title;
+        $output2 = $request->body;
+        $output3 = $request->gender;
+        return view('hoges/send', compact('output1', 'output2', 'output3'));
+        
     }
 
     /**
