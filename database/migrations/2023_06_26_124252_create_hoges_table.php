@@ -17,6 +17,9 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('body');
+            $table->tinyInteger('gender')->unsigned()->comment('性別 : 1 : 男性 2 : 女性');
+            $table->string('ages');
+            $table->string('email');
             $table->timestamps();
         });
     }

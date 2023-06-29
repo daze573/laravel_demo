@@ -21,8 +21,9 @@ class HogeController extends Controller
     {
         $output1 = $request->title;
         $output2 = $request->body;
-        $output3 = $request->gender;
-        return view('hoges/send', compact('output1', 'output2', 'output3'));
+        $output3 = $request->ages;
+        $output4 = $request->gender;
+        return view('hoges/send', compact('output1', 'output2', 'output3', 'output4'));
         
     }
 

@@ -11,5 +11,7 @@
   <body>
     <p><?php echo $_POST['title'] ?></p>
     <p><?php echo $_POST['body'] ?></p>
+    <p><?php echo $_POST['ages'] ?></p>
+    <p><?php echo $_POST['gender'] ?></p>
   </body>
 </html>

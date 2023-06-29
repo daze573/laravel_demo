@@ -19,8 +19,8 @@
           </div>
           <div class="mt-3">
             <label name="gender" style="width: 35%;">性別<span class="text-danger">※</span></label>
-            <input type="radio" name="man" style="transform:scale(3.0)">　男性　
-            <input type="radio" name="worman" style="transform:scale(3.0)">　女性　
+            <input type="radio" name="gender" value="男性" style="transform:scale(3.0)">　男性　
+            <input type="radio" name="gender" value="女性" style="transform:scale(3.0)">　女性　
           </div>
           <div class="select-form d-flex mt-3">
             <label name="ages" class="w-50">年代<span class="text-danger">※</span></label>
