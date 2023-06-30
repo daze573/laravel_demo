@@ -25,6 +25,9 @@ class HogeController extends Controller
         $output4 = $request->gender;
         return view('hoges/send', compact('output1', 'output2', 'output3', 'output4'));
         
+        if ($request->input('back') == 'back') {
+            return redirect('hoges/index');
+        }
     }
 
     /**
