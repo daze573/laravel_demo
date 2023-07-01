@@ -29,10 +29,18 @@
           <p class="col-10 offset-1"><?php echo $_POST['email'] ?></p>
         </div>
         <div class="row">
+          <p class="col-1">メール送信可否</p>
+          <?php if(isset($_POST['email_send'])): ?>
+            <p class="col-10 offset-1"><?php echo $_POST['email_send'] ?></p>
+          <?php else: ?>
+            <p class="col-10 offset-1">送信拒否</p>
+          <?php endif ?>
+        </div>
+        <div class="row">
           <p class="col-1">意見</p>
           <p class="col-10 offset-1"><?php echo $_POST['body'] ?></p>
         </div>
-        <button type="submit"><a href="/index" class="text-dark">再入力</a></button>
+        <button type="button" onClick="history.back()">戻る</button>
         <input type="submit" value="送信">
       </form>
     </div>

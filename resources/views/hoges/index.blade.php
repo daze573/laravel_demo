@@ -41,7 +41,7 @@
             <label name="email_send" style="width: 35%;">メール送信可否　</label>
             <div>
               <p>登録したメールアドレスにメールマガジンをお送りしてもよろしいですか？</p>
-              <input name="email_send" type="checkbox" style="transform:scale(3.0)">　送信を許可します
+              <input name="email_send" type="checkbox" value="送信許可" style="transform:scale(3.0)">　送信を許可します
             </div>
           </div>
           <div class="opinion-form d-flex mt-3">

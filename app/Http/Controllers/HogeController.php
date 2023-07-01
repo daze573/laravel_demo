@@ -23,7 +23,8 @@ class HogeController extends Controller
         $output2 = $request->body;
         $output3 = $request->ages;
         $output4 = $request->gender;
-        return view('hoges/send', compact('output1', 'output2', 'output3', 'output4'));
+        $output5 = $request->email_send;
+        return view('hoges/send', compact('output1', 'output2', 'output3', 'output4', 'output5'));
         
         if ($request->input('back') == 'back') {
             return redirect('hoges/index');

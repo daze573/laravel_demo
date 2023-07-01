@@ -20,6 +20,7 @@ return new class extends Migration
             $table->tinyInteger('gender')->unsigned()->comment('性別 : 1 : 男性 2 : 女性');
             $table->string('ages');
             $table->string('email');
+            $table->string('email_send');
             $table->timestamps();
         });
     }
