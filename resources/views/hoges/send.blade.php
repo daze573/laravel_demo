@@ -11,7 +11,7 @@
   <body>
     <div class="container">
       <h2 class="mb-5">内容確認</h2>
-      <form method="post" action="/complete">
+      <form method="get" action="/confirm">
         <div class="row">
           <p class="col-1">氏名</p>
           <p class="col-10 offset-1"><?php echo $_POST['title'] ?></p>
