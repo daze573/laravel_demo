@@ -13,7 +13,7 @@
       <h1>ご意見をお送り頂きありがとうございました。</h1>
     </div>
     <form method="get" action="/index">
-      <button type="submit">トップへ戻る</button>
+      <button type="submit" class="position-relative bg-info p-3" style="top: 500px; left: 900px">トップへ戻る</button>
     </form>
   </body>
 </html>
